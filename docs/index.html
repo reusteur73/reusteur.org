@@ -1,0 +1,624 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-207886701-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-207886701-1');
+</script>
+<!doctype html>
+<script data-ad-client="ca-pub-4416171332465511" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4416171332465511"
+     crossorigin="anonymous"></script>
+<html lang="en-us">
+
+
+    <head>
+        <!--
+        <main class="aaa">
+    <div class="align--center">
+        <img href="https://fb.watch/82h_nzBI3P/" src="add.gif" height="25%" width="25%">
+        <br><br>
+        <a href="https://fb.watch/82h_nzBI3P/" class="bbb">►Commander en ligne◄</a>
+        <br>
+        </div>
+</main>-->
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/png" href="bar-chart.png" />
+        <title>Tous les chiffres & graphiques du COVID-19 en Nouvelle-Calédonie en temps réelle.</title>
+        <meta name="description" content="">
+
+        <meta name="robots" content="noindex, nofollow" />
+
+        <!-- The compiled CSS file -->
+        <link rel="stylesheet" href="https://demos.onepagelove.com/html/carta/css/production.css">
+
+        <!-- Web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Source+Serif+Pro:700" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+        <!-- favicon.ico. Place these in the root directory. -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+
+    <body>
+
+
+    <!-- Header -->
+    <header class="align--center pt3">
+        <div class="container--lg border--bottom pb3">
+           <!-- <img class="logo mb3" src="./img/logo.svg" alt="Carta"> -->
+            <h1 class="mb2">Statistiques et graphiques du COVID-19 en Nouvelle-Calédonie</h1>
+        </div>
+    </header>
+    <div class="container--lg border--bottom pb3 align--center"></br>Partager ce site</br>
+        <div class="sharethis-inline-share-buttons"></div>
+    </div>
+
+    <main>
+
+        <!-- Feature list -->
+
+        <!-- Premier GRAPH -->
+        <div class="align--center container--lg pt1 border--bottom pb1 xxxx">
+            <a style="font-weight: bold;"><span style="color: green; font-weight: bold; font-size: 22px; text-decoration: underline #FF3028;">ASTUCE:</span>  Vous pouvez interagir avec les graphiques afin de voir les chiffres pour chacun des jours que vous souhaitez.</a>
+        </div>
+        <div class="align--center container--lg pb1 pt1 border--bottom xxxx">
+            <a>Ajouter ce site aux favoris :</br>L'option "Ajouter à l'écran d'accueil" sur mobile</br>Ctrl+D sur PC.</a>
+        </div>
+        <div class="container--lg pt1 pb1">
+
+            <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2 order-2">
+                    <div class="border--bottom pb2 mb2">
+                        <h2>Cas par jour</h2>
+                        <p>Toutes les données actualisées par le site du gouvernement sur le nombre de nouveaux cas en 24 heures.</p>
+                    </div>
+                    <p class="text--gray mb1">Les données ne sont pas actualisées à des heures fixes, elles peuvent donc être approximatives.</br>D'après vous, les week-ends impactent-ils la découverte des cas ?</p>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb3 order-2" width="500px">
+                <canvas id="bar-chart" style="height:400px"></canvas>
+            <script>
+                const plugin = {
+                id: 'bar-chart',
+                beforeDraw: (chart) => {
+                    const ctx = chart.canvas.getContext('bar-chart');
+                    ctx.save();
+                    ctx.globalCompositeOperation = 'destination-over';
+                    ctx.fillStyle = 'lightGreen';
+                    ctx.fillRect(0, 0, chart.width, chart.height);
+                    ctx.restore();
+                }
+                };
+                new Chart(document.getElementById("bar-chart"), {
+                    type: 'bar',
+                    backgroundColor: ["#c45850"],
+                    data: {
+                    labels: ["07/09/2021", "08/09/2021","09/09/2021","10/09/2021", "11/09/2021", "12/09/2021", "13/09/2021","14/09/2021","15/09/2021","16/09/2021","17/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","30/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","06/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","11/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","31/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021","05/11/2021"],
+                    datasets: [
+                        {
+                            label: "Cas par 24h",
+                            backgroundColor: ["#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850","#c45850"],
+                            data: [7,59,51,148,300,256,329,62,1174,383,558,204,72,793,331,555,523,154,226,194,459,338,252,191,313,57,155,364,150,204,151,89,64,20,231,248,102,94,72,44,93,93,50,92,83,66,28,71,134,81,80,61,39,20,17,67,77,53,53],
+                            order: 1
+                        },
+                        {
+                            label: "Moyenne glissante sur 7 jours",
+                            backgroundColor: ["#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0","#177ED0"],
+                            data: [,,,,,,164,172,331,379,437,424,397,464,502,414,434,376,379,397,349,350,307,259,282,258,252,239,212,205,199,167,168,149,130,144,129,121,119,116,126,107,78,77,75,74,72,69,75,79,78,74,71,69,62,52,52,48,47],
+                            type: 'line',
+                            tension: 0.3,
+                            order: 0
+                        }
+                    ]
+                    },
+                    options: {
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Cas par jour'
+                            },
+                        },
+                        responsive: true
+                    }
+                });
+
+
+            </script>
+                </div>
+             </div>
+            <div class="border--bottom"></div>
+            <!--Quatrième GRAPH-->
+                <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2">
+                    <div class="pb2 mb2">
+                        <h2>Situation sanitaire</h2>
+                        <p>Nombre de cas actif, comparé aux cas cumulés, et aux guérisons cumulées</br>Attention, ces chiffres sont approximatifs.</br>Merci à Geoffray pour l'aide !</p>
+                    </div>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb2 order-1">
+                <canvas id="line8-chart" style="height:400px"></canvas>
+            <div class="table-responsive">
+            <script>
+                new Chart(document.getElementById("line8-chart"), {
+                    type: 'line',
+                    data: {
+                    labels: ["07/09/2021","08/09/2021","09/09/2021","10/09/2021", "11/09/2021", "12/09/2021", "13/09/2021","14/09/2021","15/09/2021","16/09/2021","17/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","30/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","06/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","11/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","31/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021","05/11/2021"],
+                    datasets: [
+                    {
+                        label: "Les cas actifs",
+                        backgroundColor: ["#17202A"],
+                        data: [7,66,117,264,564,820,1149,1207,2378,2736,3292,3490,3559,4344,4659,4116,4202,3901,3700,3430,2907,3232,3021,2101,2401,2450,2177,2260,2398,2594,1993,1806,1560,1579,1357,1495,1596,1576,1213,1107,1199,1019,1002,1038,926,840,732,704,735,758,800,750,714,669,685,618,648,669,590]
+                        },
+                        {
+                        label: "Total cas positifs",
+                        backgroundColor: ["#1E4B9D"],
+                        data: [7,66,117,265,565,821,1150,1212,2386,2769,3327,3531,3603,4396,4727,5282,5805,5959,6185,6379,6838,7176,7428,7619,7932,7989,8144,8508,8658,8862,9013,9102,9166,9186,9417,9665,9767,9861,9933,9977,10070,10163,10213,10305,10388,10454,10482,10553,10687,10768,10848,10909,10948,10968,10985,11052,11129,11182,11235],
+                        type: 'bar'
+                        },{
+                        label: "Total cumulé cas guéris",
+                        backgroundColor: ["#27AE60"],
+                        data: [0,0,0,0,0,0,0,1,1,19,19,19,19,19,19,1109,1541,1986,2402,2856,3830,3830,4288,5389,5389,5389,5810,6083,6083,6083,6829,7100,7406,7406,7851,7945,7945,8054,8484,8629,8629,8901,8966,9020,9210,9362,9493,9588,9691,9747,9784,9895,9970,10034,10034,10167,10214,10246,10378],
+                        type: 'bar'
+                        }
+                    ]
+                    },
+                    options: {
+                        responsive: false,
+                        maintainAspectRatio: false,
+                        legend: { display: false },
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Situation sanitaire'
+                            },
+                        },
+                    }
+                });
+
+
+
+            </script>
+        </div>
+                </div>
+            </div><div class="border--bottom"></div>
+                   <!--  Taux indice GRAPH -->
+        <div class="container--lg pt1 pb1">
+
+            <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2 order-2">
+                    <div class="pb2 mb2">
+                        <h2>Taux d'incidence cumulée glissante 7j</h2>
+                            <p>Le taux d'incidence permet de voir le nombre de personnes testées positives sur 100 000 habitants.</br>Il a été calculé avec le dernier recensement de l'ISEE en 2019,
+                            qui indiquait une population de 271 407 personnes.</br>
+                            Cas positifs d'une semaine * 100 000 / 271 407.</p>
+                    </div>
+                    <p class="text--gray mb1"></p>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb3 order-2" width="500px">
+                <canvas id="bar-chart22" style="height:400px"></canvas>
+            <script>
+                new Chart(document.getElementById("bar-chart22"), {
+                    type: 'bar',
+                    backgroundColor: ["#c45850"],
+                    data: {
+                    labels: ["13/09/2021","14/09/2021","15/09/2021","16/09/2021","17/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","30/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","06/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","11/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","31/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021","05/11/2021"],
+                    datasets: [
+                        {
+                            label: "Incidence cumulée glissante 7j",
+                            backgroundColor: ["#5871D8"],
+                            data: [424,444,855,977,1128,1093,1025,1196,1295,1067,1119,970,978,1023,900,902,791,668,727,665,650,615,546,528,514,431,434,384,335,371,333,312,306,299,326,275,202,198,194,192,186,178,193,204,200,192,182,179,159,134,133,123,120],
+                            type: 'line',
+                            order: 1,
+                            tension: 0.3
+                        },{
+                            label: "Seuil d'alerte 50",
+                            backgroundColor: ["#2DD135"],
+                            data: [50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50],
+                            type: 'line',
+                            order: 1,
+                            fill: false,
+
+                        },{
+                            label: "Seuil d'alerte 200",
+                            backgroundColor: ["#BE2020"],
+                            data: [200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200],
+                            type: 'line',
+                            order: 1,
+                            fill: false,
+
+                        }
+                    ]
+                    },
+                    options: {
+                    legend: { display: false },
+                    plugins: [plugin],
+                    responsive: false,
+                    plugins: {
+                            title: {
+                                display: true,
+                                text: 'Taux incidence cumulée glissante 7jrs'
+                            },
+                        },
+                    }
+                });
+
+
+            </script>
+                </div>
+            </div>
+            <div class="border--bottom"></div>
+                <!--Deuxième GRAPH-->
+            <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2">
+                <canvas id="line-chart" style="height:425px"></canvas>
+                    <script>
+                        new Chart(document.getElementById("line-chart"), {
+                        type: 'line',
+                        data: {
+                            labels: ["07/09/2021","08/09/2021","09/09/2021", "10/09/2021", "11/09/2021", "12/09/2021", "13/09/2021","14/09/2021","15/09/2021","16/09/2021","17/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","30/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","06/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","11/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","31/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021","05/11/2021"],
+                            datasets: [
+                            {
+                            label: "Cas depuis le début",
+                            backgroundColor: ["#c45850", "#c45850","#c45850","#c45850","#c45850", "#c45850", "#c45850","#c45850","#c45850"],
+                            data: [7,66,117,265,565,821,1150,1212,2386,2769,3327,3531,3603,4396,4727,5282,5805,5959,6185,6379,6838,7176,7428,7619,7932,7989,8144,8508,8658,8862,9013,9102,9166,9186,9417,9665,9767,9861,9933,9977,10070,10163,10213,10305,10388,10454,10482,10553,10687,10768,10848,10909,10948,10968,10985,11052,11129,11182,11235],
+                                    },
+                                    {
+                        label: "Guérisons",
+                        backgroundColor: ["#10BF1A", "#10BF1A","#10BF1A","#10BF1A","#10BF1A","#10BF1A"],
+                        data: [,,,,,,,1,1,19,19,19,19,19,19,1109,1541,1986,2402,2856,3830,3830,4288,5389,5389,5389,5810,6083,6083,6416,6829,7100,7406,7406,7851,7945,7945,8054,8484,8629,8629,8901,8966,9020,9210,9362,9493,9588,9691,9747,9784,9784,9895,9970,10034,10034,10167,10214,10246,10378]
+                        }
+                                ]
+                    },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                            title: {
+                                display: true,
+                                text: 'Cas cumulés & guérisons'
+                            },
+                        },
+                        },
+                        });
+                    </script>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb2">
+                    <div class="border--bottom pb2 mb2">
+                        <h2>Cas cumulés & guérisons</h2>
+                        <p>Nombre de cas cumulés depuis le début de la deuxième vague qui a commencé le 6 septembre 2021.</br>Ainsi que les guérisons qui ont commencé à partir du 18 septembre 2021.</p>
+                    </div>
+                    <p class="italic text--gray mb1">Données qui proviennent du gouvernement et des points presse.</p>
+                </div>
+            </div>
+            <div class="border--bottom"></div></div>
+
+            <!--Décès journalier GRAPH-->
+            <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2 order-2">
+                    <div class="pb2 mb2">
+                        <h2>Décès journaliers</h2>
+                        <p>Nombre de décès journaliers liés au COVID-19 depuis le début de la deuxième vague, le 6 septembre 2021.</p>
+                    </div>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb2 order-1">
+                <canvas id="line22-chart" style="height:400px"></canvas>
+            <script>
+                new Chart(document.getElementById("line22-chart"), {
+                    type: 'bar',
+                    data: {
+                    labels: ["10/09/2021","11/09/2021","12/09/2021","13/09/2021","14/09/2021","15/09/2021","16/09/2021","17/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","30/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","06/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","11/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","31/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021","05/11/2021"],
+                    datasets: [
+                        {
+                        label: "Décès Journaliers",
+                        backgroundColor: ["#616161"],
+                        data: [1,0,0,0,3,3,7,2,6,3,8,16,8,5,10,11,10,8,13,5,10,13,8,7,8,12,8,6,5,4,1,8,16,1,5,5,5,1,1,2,2,5,0,5,4,0,2,1,0,0,1,1,1,0,0,0]
+                        }
+                    ]
+                    },
+                    options: {
+                    legend: { display: true },
+                    plugins: {
+                            title: {
+                                display: true,
+                                text: 'Décès Journaliers'
+                            },
+                        },
+                    }
+                });
+
+
+            </script>
+                </div>
+            </div>
+            <div class="border--bottom"></div>
+
+
+
+
+            <!--Troisième GRAPH-->
+            <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2 order-2">
+                    <div class="pb2 mb2">
+                        <h2>Décès cumulés</h2>
+                        <p>Nombre de décès cumulés liés au COVID-19 depuis le début de la deuxième vague, le 6 septembre 2021.</p>
+                    </div>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb2 order-1">
+                <canvas id="line2-chart" style="height:400px"></canvas>
+            <script>
+                new Chart(document.getElementById("line2-chart"), {
+                    type: 'line',
+                    data: {
+                    labels: ["10/09/2021", "11/09/2021", "12/09/2021", "13/09/2021","14/09/2021","15/09/2021","16/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","30/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","06/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","11/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","31/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021","05/11/2021"],
+                    datasets: [
+                        {
+                        label: "Décès cumulés",
+                        backgroundColor: ["#c45850", "#c45850","#c45850","#c45850","#c45850","#c45850"],
+                        data: [1,1,1,1,4,7,14,16,22,25,33,49,57,62,72,83,93,101,114,119,129,142,150,157,165,177,185,196,200,201,209,225,226,231,236,241,242,243,245,247,252,252,257,261,261,263,264,264,264,265,266,267,267,267,267]
+                        }
+                    ]
+                    },
+                    options: {
+                    legend: { display: false },
+                    plugins: {
+                            title: {
+                                display: true,
+                                text: 'Décès cumulés'
+                            },
+                        },
+                    }
+                });
+
+
+            </script>
+                </div>
+            </div>
+            <div class="border--bottom"></div>
+
+
+            <!--Cinquième GRAPH-->
+                <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2">
+                    <div class="pb2 mb2">
+                        <h2>Réanimations</h2>
+                        <p>Nombre de personne présente en réanimation le jour même.</br>Ceci n'est donc pas un cumul.</br>À savoir que le nombre de lits en réanimation ne va pas au-delà de 60, c'est donc normal que cela stagne.</p>
+                    </div>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb2 order-1">
+                <canvas id="line9-chart" style="height:400px"></canvas>
+            <script>
+                new Chart(document.getElementById("line9-chart"), {
+                    type: 'line',
+                    data: {
+                    labels: ["07/09/2021","08/09/2021","09/09/2021","10/09/2021", "11/09/2021", "12/09/2021", "13/09/2021","14/09/2021","15/09/2021","16/09/2021","17/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","30/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","06/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","11/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","31/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021","05/11/2021"],
+                    datasets: [
+                        {
+                        label: "Réanimations",
+                        backgroundColor: ["#0131B4", "#0131B4","#0131B4","#0131B4","#0131B4","#0131B4"],
+                        data: [1,7,6,4,6,7,15,18,26,27,35,37,39,54,52,54,56,56,56,52,53,57,55,56,52,54,56,57,55,59,51,52,55,55,54,45,45,45,39,36,35,41,45,31,30,29,29,28,25,28,24,23,26,29,31,32,34,19,19]
+                        }
+                    ]
+                    },
+                    options: {
+                    legend: { display: false },
+                    plugins: {
+                            title: {
+                                display: true,
+                                text: 'Patients en réanimation'
+                            },
+                        },
+                    }
+                });
+
+
+            </script>
+            </div>
+                </div>
+                    <div class="border--bottom"></div>
+                        <div class="pb2 mb2 align--center"></br>
+                            <h2>À propos de la vaccination</h2>
+                            <p>Population vacciné, 1ère et 2ème dose.</br></p>
+                        </div>
+                    <div class="container--lg">
+<!--Cinquième GRAPH-->
+                <canvas id="line10-chart" style="height:400px"></canvas>
+            <script>
+                new Chart(document.getElementById("line10-chart"), {
+                    type: 'bar',
+                    data: {
+                        labels: ["13/09/2021","14/09/2021","15/09/2021","16/09/2021","18/09/2021","19/09/2021","21/09/2021","22/09/2021","23/09/2021","24/09/2021","25/09/2021","26/09/2021","27/09/2021","28/09/2021","29/09/2021","01/10/2021","02/10/2021","03/10/2021","04/10/2021","05/10/2021","07/10/2021","08/10/2021","09/10/2021","10/10/2021","12/10/2021","13/10/2021","14/10/2021","15/10/2021","16/10/2021","17/10/2021","18/10/2021","19/10/2021","20/10/2021","21/10/2021","22/10/2021","23/10/2021","24/10/2021","25/10/2021","26/10/2021","27/10/2021","28/10/2021","29/10/2021","30/10/2021","01/11/2021","02/11/2021","03/11/2021","04/11/2021"],
+                    datasets: [
+                    {
+                    label: "Total cumulé injection 1ère dose",
+                    backgroundColor: ["#D84315"],
+                    data: [106477,112334,116931,120815,127184,127322,129949,133124,135877,138756,139955,140612,140612,143205,145575,150390,152203,152951,153060,154536,158121,162314,163063,163236,164683,167098,168141,171113,171401,171401,171987,172477,172964,173358,173358,174084,174092,174485,174887,175295,175667,176067,176189,176206,176531,176832,177321]
+                    },
+                    {
+                    label: "Total cumulé injection 2ème dose",
+                    backgroundColor: ["#1565C0"],
+                    data: [347,77109,78091,78637,79455,79462,80101,81345,81936,82520,82558,82636,82636,83851,85296,91902,95981,98488,98491,102814,111548,120807,123133,123577,126905,133754,136404,140132,141123,141127,143318,145238,146797,148073,148073,150366,150374,151729,153435,154815,155982,157312,157759,157826,159280,160511,162100]
+                    },
+                    //{
+                    //label: "Total cumulé injection 3ème dose",
+                    //backgroundColor: ["#00FF00"],
+                    //data: [,,,,,,,,,1191,1212,1213,1213,1272,1330,1455,1512,1512,1512,1552,1629,1679,,]
+                    //}
+                ]
+                },
+                    options: {
+                        plugins: {
+                        title: {
+                            display: true,
+                            text: 'Évolution de la vaccination en NC'
+                        },
+                        },
+                        responsive: true,
+                        scales: {
+                            x: {
+                                stacked: false,
+                                },
+                            y: {
+                                stacked: false
+                                }
+                    }}
+                });
+
+
+            </script></br>
+            <div class="align--center border--bottom container"></div>
+            <div class="pb2 mb2 align--center"></br>
+                        <h2>Pourcentage de population totale vaccinée</h2>
+                        <p>Selon la page d'information du gouvernement sur la vaccination. Et selon la population totale vaccinable</p>
+            </div>
+            <canvas id="pie-chart" style="height:40%"></canvas>
+            <script>
+                new Chart(document.getElementById("pie-chart"), {
+                    type: 'pie',
+                    data: {
+                        labels: ["Population vacciné","Population non-vacciné"],
+                    datasets: [
+                    {
+                    label: "Total cumulé injection 1ère dose",
+                    backgroundColor: ["#3cba9f","#e8c3b9"],
+                    data: [59.82,40.18]
+                    }
+                ]
+                },
+                    options: {
+                        plugins: {
+                        title: {
+                            display: true,
+                            text: 'Pourcentage de la population vacciné et non-vacciné'
+                        },
+                        },
+                        responsive: true,
+                        scales: {
+                            x: {
+                                stacked: true,
+                                },
+                            y: {
+                                stacked: true
+                                }
+                    }}
+                });
+
+
+            </script></br>
+
+
+
+            <div class="border--bottom"></div>
+
+
+
+            <div class="pb2 mb2 align--center"></br>
+                        <h2>Polynésie Française & Nouvelle-Calédonie</h2>
+                        <p>Comparaison de la période la plus intense de l'épidémie en Polynésie Française qui a duré 27 jours et, à la vague que la Calédonie subit en ce moment, qui a commencé le 6 septembre 2021.</br>Chaque jour du graphique correspond aux nouveaux cas en 24 heures.</br>J1 pour la Polynésie Française commence le 24 juillet 2021</p>
+            </div>
+            <!--Cinquième GRAPH-->
+                <div class="align--center border--bottom container"></div>
+                <canvas id="line3-chart" style="height:400px"></canvas>
+            <script>
+                new Chart(document.getElementById("line3-chart"), {
+                    type: 'bar',
+                    data: {
+                        labels: ["J1","J2","J3","J4", "J5", "J6", "J7","J8","J9","J10","J11","J12","J13","J14","J15","J16","J17","J18","J19","J20","J21","J22","J23","J24","J25","J26","J27"],
+                    datasets: [
+                    {
+                    label: "Covid en Polynésie Française",
+                    backgroundColor: ["#D84315", "#D84315","#D84315","#D84315","#D84315","#D84315"],
+                    data: [51,107,107,142,239,173,432,379,457,489,654,1048,1048,1443,1075,942,1117,1294,1752,1752,2211,2164,1622,1416,629,2745,1061,0]
+                    },
+                    {
+                    label: "Covid en Nouvelle-Calédonie",
+                    backgroundColor: ["#1565C0", "#1565C0","#1565C0","#1565C0","#1565C0","#1565C0"],
+                    data: [3,12,102,148,300,256,329,62,1174,383,558,204,72,793,331,555,523,154,225,194,459,338,298,146,312,57,364]
+                    },
+                ]
+                },
+                    options: {
+                        plugins: {
+                        title: {
+                            display: true,
+                            text: 'Corrélation de vague de COVID. Jour de la Nouvelle-Calédonie : J31'
+                        },
+                        },
+                        responsive: true,
+                    }
+                    });
+
+
+            </script>
+
+                </div>
+
+        </div></br>
+        <div class="border--bottom pb2 mb3 align--center">
+            <a class="bold color--green">Dernière mise à jour : Samedi 6 novembre à 11h23</br></br>
+                Données de : gouv.nc à 14h du Vendredi 5 novembre</br></br> </a>
+            <a href="archive.html">Consulter les archives des chiffres</a>
+            </div>
+        <!-- Mentioned -->
+        <div class="container--lg pt1 pb1 mb1 align--center">
+        </div>
+
+        <!-- CTA -->
+        <div class="bg--dark-gray align--center pt3 pb3">
+            <div class="container pt2 pb2">
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdDjr8cAAAAAD_T50kONskp1X2vQH3PG7abO2Xp"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6LdDjr8cAAAAAD_T50kONskp1X2vQH3PG7abO2Xp', {action: 'login'}).then(function(token) {
+       ...
+    });
+});
+</script>
+                <p class="h3 text--white mb1 bold">Être informé lors d'une mise à jour</p>
+                <p class="text--white mb3">Insère ton email ci-dessous.</p>
+                <div class="inline-block mr1 no-mr-on-mobile" style="width:280px;max-width:100%">
+                <form action="#" method="POST">
+                    <input class="form-control" type="email" required="required" placeholder="Email" name="emails">
+                </div>
+                    <button class="btn btn--secondary" type="submit">Être Notifié</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt1 pb3 align--center-on-mobile">
+        <div class="container">
+            <div class="grid-row">
+                <pre>
+                    <div class="grid-column mt2 span-half">
+                        <a HREF="mailto:kahlumba@protonmail.com" class="small">Me contacter : kahlumba@protonmail.com</br></a>
+                        <a href="#" class="small" style="text-underline-position: all;">Politique de confidentialité</a>
+                    </div>
+                </pre>
+                <div class="container">
+            <script type="text/javascript" src="https://www.counters-free.net/count/9df9"></script><br>
+        </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="align-right align--right-on-mobile">
+    </div>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61469b2df48362001928a64a&product=inline-share-buttons" async="async"></script>
+    </body>
+</html>
